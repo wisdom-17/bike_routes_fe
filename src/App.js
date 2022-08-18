@@ -5,7 +5,7 @@ import { gapi } from 'gapi-script';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [ profile, setProfile ] = useState([]);
+  const [ profile, setProfile ] = useState(null);
   const clientId = '921371927242-sljeaailjhbnot134dejlh0orepedtcp.apps.googleusercontent.com';
   useEffect(() => {
     const initClient = () => {
